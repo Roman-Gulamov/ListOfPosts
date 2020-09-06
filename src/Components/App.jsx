@@ -57,6 +57,11 @@ export const App = () => {
             </Context.Provider>
         );
     } else {
-        return <Error />
+        return (
+            <>
+            <GlobalStyle />
+                <Error />
+            </>
+        )
     }
 }
