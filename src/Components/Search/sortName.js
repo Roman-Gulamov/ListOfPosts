@@ -8,11 +8,11 @@ export const sortName = (event) => {
     if (inputValue !== '') {
         iterableUsers.forEach((child) => {
             const search = child.innerText.search(RegExp(inputValue, "gi"));
-            return search === -1 ? child.style.display = "none" : child.style.display = "block";
+            return search === -1 ? child.style.display = "none" : child.style.display = "flex";
         });
     } else {
         iterableUsers.forEach((child) => {
-            child.style.display = "block";
+            child.style.display = "flex";
         });
     }
 }
