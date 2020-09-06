@@ -1,19 +1,34 @@
 {
   "files": {
-    "main.js": "/ListOfPosts/static/js/main.c39c51ca.chunk.js",
-    "main.js.map": "/ListOfPosts/static/js/main.c39c51ca.chunk.js.map",
+    "main.css": "/ListOfPosts/static/css/main.a356dc02.chunk.css",
+    "main.js": "/ListOfPosts/static/js/main.ccdbc681.chunk.js",
+    "main.js.map": "/ListOfPosts/static/js/main.ccdbc681.chunk.js.map",
     "runtime-main.js": "/ListOfPosts/static/js/runtime-main.a20305a2.js",
     "runtime-main.js.map": "/ListOfPosts/static/js/runtime-main.a20305a2.js.map",
-    "static/js/2.72064484.chunk.js": "/ListOfPosts/static/js/2.72064484.chunk.js",
-    "static/js/2.72064484.chunk.js.map": "/ListOfPosts/static/js/2.72064484.chunk.js.map",
+    "static/js/2.a2f2bf66.chunk.js": "/ListOfPosts/static/js/2.a2f2bf66.chunk.js",
+    "static/js/2.a2f2bf66.chunk.js.map": "/ListOfPosts/static/js/2.a2f2bf66.chunk.js.map",
     "index.html": "/ListOfPosts/index.html",
-    "precache-manifest.0b0d5c69a61319fda6a04bf34869eb9b.js": "/ListOfPosts/precache-manifest.0b0d5c69a61319fda6a04bf34869eb9b.js",
+    "precache-manifest.45d5648ce3f1695ea827ccb1991a9d3d.js": "/ListOfPosts/precache-manifest.45d5648ce3f1695ea827ccb1991a9d3d.js",
     "service-worker.js": "/ListOfPosts/service-worker.js",
-    "static/js/2.72064484.chunk.js.LICENSE.txt": "/ListOfPosts/static/js/2.72064484.chunk.js.LICENSE.txt"
+    "static/css/main.a356dc02.chunk.css.map": "/ListOfPosts/static/css/main.a356dc02.chunk.css.map",
+    "static/js/2.a2f2bf66.chunk.js.LICENSE.txt": "/ListOfPosts/static/js/2.a2f2bf66.chunk.js.LICENSE.txt",
+    "static/media/Anonim.png": "/ListOfPosts/static/media/Anonim.ffae8f02.png",
+    "static/media/Chelsey.png": "/ListOfPosts/static/media/Chelsey.c180281c.png",
+    "static/media/Clementina.png": "/ListOfPosts/static/media/Clementina.661e0df6.png",
+    "static/media/Clementine.png": "/ListOfPosts/static/media/Clementine.b5182259.png",
+    "static/media/Dennis.png": "/ListOfPosts/static/media/Dennis.69eae2dc.png",
+    "static/media/Ervin.png": "/ListOfPosts/static/media/Ervin.95de95e5.png",
+    "static/media/Glenna.png": "/ListOfPosts/static/media/Glenna.838cfc3d.png",
+    "static/media/Kurtis.png": "/ListOfPosts/static/media/Kurtis.f472dfc5.png",
+    "static/media/Leanne.png": "/ListOfPosts/static/media/Leanne.7ca287b0.png",
+    "static/media/Nicholas.png": "/ListOfPosts/static/media/Nicholas.0340adaa.png",
+    "static/media/Patricia.png": "/ListOfPosts/static/media/Patricia.71d42450.png",
+    "static/media/stylesheet.css": "/ListOfPosts/static/media/long-cang-v5-latin-regular.d47c68cc.eot"
   },
   "entrypoints": [
     "static/js/runtime-main.a20305a2.js",
-    "static/js/2.72064484.chunk.js",
-    "static/js/main.c39c51ca.chunk.js"
+    "static/js/2.a2f2bf66.chunk.js",
+    "static/css/main.a356dc02.chunk.css",
+    "static/js/main.ccdbc681.chunk.js"
   ]
 }
