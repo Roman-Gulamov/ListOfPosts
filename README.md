@@ -1,5 +1,3 @@
-# In progress...
-
 ## Инструкция для старта проекта:
 
 1. `git clone https://github.com/Roman-Gulamov/ListOfPosts.git`
