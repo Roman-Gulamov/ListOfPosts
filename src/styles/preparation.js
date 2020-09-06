@@ -3,6 +3,9 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
     *, *:before, *:after {
         box-sizing: border-box;
+        font-family: 'Long Cang';
+        font-size: 20px;
+        line-height: 1.2;
     }
 
     html, body, div, span, applet, object, iframe,
@@ -30,6 +33,21 @@ export const GlobalStyle = createGlobalStyle`
 
     ol, ul {
         list-style: none;
+    }
+
+    body {
+        &::-webkit-scrollbar { 
+            width: 10px;
+        }
+    
+        &::-webkit-scrollbar-track-piece { 
+            background: #E7E7E7;
+        }
+    
+        &::-webkit-scrollbar-thumb { 
+            background-color: #00acee;
+            height: 100px;
+        }
     }
 
     blockquote, q {
