@@ -8,10 +8,10 @@ import { BlogMap } from './BlogMap';
 
 export const Blog = () => {
     return (
-        <Container>
-            <Card ref={sortRef}>
+        <Card>
+            <Container ref={sortRef}>
                 <BlogMap />
-            </Card>
-        </Container>
+            </Container>
+        </Card>
     )
 }
