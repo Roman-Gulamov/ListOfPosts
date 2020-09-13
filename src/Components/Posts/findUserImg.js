@@ -11,7 +11,7 @@ import Clementina from '../../assets/images/Clementina.png';
 import Anonim from '../../assets/images/Anonim.png';
 
 
-export const findUserImg = (id) => {
+const findUserImg = (id) => {
     switch (id) {
         case 1:
             return Leanne
@@ -37,3 +37,5 @@ export const findUserImg = (id) => {
             return Anonim
     }
 }
+
+export default findUserImg;

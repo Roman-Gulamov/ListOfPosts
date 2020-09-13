@@ -1,6 +1,5 @@
-import { sortRef } from '../../services/ref';
 
-export const SortName = (event) => {
+const sortName = (event, sortRef) => {
     const sort = sortRef.current;
     const inputValue = event.target.value;
     const iterableUsers = [...sort.children];
@@ -14,8 +13,8 @@ export const SortName = (event) => {
             );
         });
     } else {
-        iterableUsers.forEach((child) => {
-            return child
-        });
+        iterableUsers.forEach(child => child);
     }
 }
+
+export default sortName;

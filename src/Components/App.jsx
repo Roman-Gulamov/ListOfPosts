@@ -1,12 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react';
-import { axios } from '../services/axios';
+import axios from '../services/axios';
 
-import { Context } from '../services/context';
+import Context from '../services/context';
 import { GlobalStyle } from '../styles/preparation';
 import { Error } from './Error/Error';
-import { Search } from './Search/Search';
-import { Blog } from './Blog/Blog';
+import { Posts } from './Posts/Posts';
 
 
 export const App = () => {
@@ -14,17 +13,13 @@ export const App = () => {
     const [users, setUsers] = useState([]);
     const [postsError, setPostsError] = useState(false);
     const [usersError, setUsersError] = useState(false);
+    
+    const url = "https://jsonplaceholder.typicode.com";
 
     
-    const url = "https://jsonplaceholder.typicode.com"
-    const header = {
-        header: {'Access-Control-Allow-Origin': 'https://jsonplaceholder.typicode.com/',}
-    }
-
-
     useEffect(() => {
         axios
-        .get(`${url}/posts`, header)
+        .get(`${url}/posts`)
         .then((response) => {
             setPosts(response.data);
             getUsers();
@@ -34,9 +29,10 @@ export const App = () => {
         })
     },[]);
 
+
     const getUsers = () => {
         axios
-        .get(`${url}/users`, header)
+        .get(`${url}/users`)
         .then((response) => {
             setUsers(response.data);
         })
@@ -51,8 +47,7 @@ export const App = () => {
             <Context.Provider value={{ posts, users }}>
                 <>
                 <GlobalStyle />
-                    <Search />
-                    <Blog />
+                    <Posts />
                 </>
             </Context.Provider>
         );

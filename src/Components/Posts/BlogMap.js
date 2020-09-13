@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import { Context } from '../../services/context';
-import { findUserImg } from './findUserImg';
+import Context from '../../services/context';
+import findUserImg from './findUserImg';
 import { 
     CardItem, 
     CardImg,
@@ -13,7 +13,7 @@ import {
     PostText
 } from '../../styles/card';
 
-export const BlogMap = () => {
+const BlogMap = () => {
     const mapFiles = useContext(Context);
 
     return (
@@ -21,7 +21,7 @@ export const BlogMap = () => {
         {mapFiles.users.map(user => (
             mapFiles.posts.map(post => (
                 post.userId === user.id ?
-                <CardItem key={ user.id }>
+                <CardItem key={ post.id }>
                     <CardImg>
                         <ImgItem src={findUserImg(user.id)} alt={user.name}/>
                     </CardImg>
@@ -37,3 +37,5 @@ export const BlogMap = () => {
         </>
     )
 }
+
+export default BlogMap
