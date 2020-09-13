@@ -1,5 +1,5 @@
 import React from 'react';
-import { sortRef } from '../../hooks/ref';
+import { sortRef } from '../../services/ref';
 
 import { Container } from '../../styles/container';
 import { Card } from '../../styles/card';

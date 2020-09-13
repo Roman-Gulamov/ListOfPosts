@@ -1,18 +1,21 @@
-import { sortRef } from '../../hooks/ref';
+import { sortRef } from '../../services/ref';
 
-export const sortName = (event) => {
+export const SortName = (event) => {
     const sort = sortRef.current;
     const inputValue = event.target.value;
     const iterableUsers = [...sort.children];
 
     if (inputValue !== '') {
         iterableUsers.forEach((child) => {
-            const search = child.innerText.search(RegExp(inputValue, "gi"));
-            return search === -1 ? child.style.display = "none" : child.style.display = "flex";
+            return (
+                child.innerText.indexOf(inputValue) === -1 ? 
+                    child.style.display = "none" : 
+                    child.style.display = "flex"
+            );
         });
     } else {
         iterableUsers.forEach((child) => {
-            child.style.display = "flex";
+            return child
         });
     }
 }

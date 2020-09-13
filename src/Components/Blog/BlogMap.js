@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Context } from '../../hooks/context';
+import { Context } from '../../services/context';
 import { findUserImg } from './findUserImg';
 import { 
     CardItem, 
@@ -18,8 +18,8 @@ export const BlogMap = () => {
 
     return (
         <>
-        {mapFiles.posts.map(post => (
-            mapFiles.users.map(user => (
+        {mapFiles.users.map(user => (
+            mapFiles.posts.map(post => (
                 post.userId === user.id ?
                 <CardItem key={ user.id }>
                     <CardImg>
