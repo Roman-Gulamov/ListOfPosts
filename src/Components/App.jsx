@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react';
-import Axios from "axios";
+import { axios } from '../services/axios';
 
-import { Context } from '../hooks/context';
+import { Context } from '../services/context';
 import { GlobalStyle } from '../styles/preparation';
 import { Error } from './Error/Error';
 import { Search } from './Search/Search';
@@ -15,7 +15,7 @@ export const App = () => {
     const [postsError, setPostsError] = useState(false);
     const [usersError, setUsersError] = useState(false);
 
-    const axios = Axios.create();
+    
     const url = "https://jsonplaceholder.typicode.com"
     const header = {
         header: {'Access-Control-Allow-Origin': 'https://jsonplaceholder.typicode.com/',}
