@@ -1,7 +1,15 @@
-## Инструкция для старта проекта:
+![ListOfPosts](https://res.cloudinary.com/romangulamov/image/upload/v1620859657/Screenshots/LiveJournal_vljrh1.png)
 
-1. `git clone https://github.com/Roman-Gulamov/ListOfPosts.git`
+# Instructions for starting a project:
 
-2. `yarn install`
+``` bash
+    1.  git clone https://github.com/Roman-Gulamov/ListOfPosts.git
+```
 
-3. `yarn start`
+``` bash
+    2.  yarn install
+```
+
+``` bash
+    3.  yarn start
+```
